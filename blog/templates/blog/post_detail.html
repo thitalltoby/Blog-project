@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %} 
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <p>
+          Django is a high-level Python web framework designed to facilitate the development of secure, scalable, and maintainable web applications. Created by experienced developers, Django emphasizes the "don't repeat yourself" (DRY) principle, which promotes reusability of code, and the "explicit is better than implicit" philosophy that ensures code clarity.
+
+One of Django's core strengths is its comprehensive set of built-in features, including an ORM (Object-Relational Mapping) system that abstracts database operations, a robust authentication system, and an admin interface that allows developers to manage content and users easily. Django also comes with tools for URL routing, form handling, and template rendering, streamlining the process of building complex web applications.
+
+Django's modular architecture encourages a clean separation of concerns, with its Model-View-Template (MVT) design pattern. This makes it easier to manage and scale applications over time. Additionally, Django's strong community support and extensive documentation make it an ideal choice for both beginners and seasoned developers.
+
+Whether you're building a simple blog or a full-scale e-commerce platform, Django provides the tools and flexibility to create powerful web applications efficiently, all while ensuring security and performance are prioritized.
+        </p>
+      </div>
+    </div>
+    {% block sidebar %}{% endblock sidebar %}
+  </div>
+</div>
+
+{% endblock content %}
