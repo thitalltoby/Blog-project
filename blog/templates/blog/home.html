@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h1 style="color: rgb(19, 5, 5); font-family: 'serif';">Welcome to my Blog!</h1>
+<hr>
+{% for posts in posts %}
+    <div class="card">
+        <div class="card-body">
+            <h3 style="font-weight: 900; color: black;"><a href="{% url 'blog-post_detail' %}">{{ posts.title }}</a></h3>
+            <p>By: {{ posts.author }} on {{ posts.date_posted }}</p>
+            <p>{{ posts.content }}</p>
+        </div>
+    </div>
+    <br>
+{% endfor %}
+{% endblock %}
